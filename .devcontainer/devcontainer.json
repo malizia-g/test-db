@@ -1,0 +1,5 @@
+{
+  "name": "My Dev Container Project",
+  "postCreateCommand": "apt-get update && apt-get install -y mariadb-server",
+  "initializeCommand": "service mariadb start"
+}
