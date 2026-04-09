@@ -1,5 +1,7 @@
 {
   "name": "My Dev Container Project",
-  "postCreateCommand": "sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server mariadb-client",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "postStartCommand": "sudo service mariadb start"
 }
